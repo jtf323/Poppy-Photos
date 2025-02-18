@@ -5,6 +5,10 @@ def generate_yaml_for_gallery(gallery_path, output_file):
         print(f"Error: The directory '{gallery_path}' does not exist.")
         return
     
+    if os.path.exists(output_file):
+        print(f"Error: The output file '{output_file}' already exists. Operation aborted.")
+        return
+
     images = sorted([f for f in os.listdir(gallery_path) if f.lower().endswith(".jpg")])
 
     yaml_content = ""
