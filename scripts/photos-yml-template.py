@@ -13,7 +13,7 @@ def generate_yaml_for_gallery(gallery_path, output_file):
 
     yaml_content = ""
     for image in images:
-        yaml_content += f"{image}:\n  description: Placeholder\n"
+        yaml_content += f"{image}:\n  description: \n"
 
     with open(output_file, "w") as yaml_file:
         yaml_file.write(yaml_content)
