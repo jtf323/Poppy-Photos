@@ -20,7 +20,7 @@ layout: default
         <a class="thumbnail" href="{{ site.gallery_dir }}/{{ image.name }}" data-position="{{ site.thumbnail_position }}"><img src="{{ site.gallery_dir }}/{{ image.name }}" alt="{{ image.basename }}" /></a>
         <span>
           <h2>{{ description }}</h2>
-          <h3><a href="{{ site.gallery_dir }}/{{ image.name }}" target="_blank">View Full Size</a></h3>
+          <h3><a href="{{ site.gallery_dir }}/{{ image.name }}" target="_blank">View Full Size</a></h3> - <h3><a href="{{ site.gallery_dir }}/{{ image.name }}" download>Download</a></h3>
         </span>
       </article>
     {% endfor %}
